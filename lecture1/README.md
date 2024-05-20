@@ -16,21 +16,27 @@
 [视频](https://www.bilibili.com/video/BV1Vx421X72D/) 2024.5.18
 
 语言模型的发展历程
+
 <img width="585" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/e96e2e1f-7ce5-4afc-a788-367bc17d7db8">
 
 书生·浦语大模型开源历程
+
 <img width="585" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/ec7e9dfc-1446-4524-b6c8-dadde00a6601">
 
 书生·浦语2.0体系
+
 <img width="585" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/9aee2c4b-9157-4711-84e3-a37dc8b34026">
 
 书生·浦语2.0主要亮点
+
 <img width="585" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/e1ba287e-4546-4e62-93ce-bd675a49e19a">
 
 模型应用流程
+
 <img width="585" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/ff579729-027c-45e8-bd1f-7e3b07baab46">
 
 书生·浦语全链条开源开放体系
+
 <img width="585" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/1669b1cc-acd0-468f-8e64-306656bcf920">
 
 ### 数据
