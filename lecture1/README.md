@@ -43,6 +43,7 @@
 [书生·万卷](https://opendatalab.org.cn/)
 
 书生·万卷1.0 为书生·万卷多模态语料库的首个开源版本，包含文本数据集、图文数据集、视频数据集三部分，数据总量超过2TB。基于大模型数据联盟构建的语料库，上海AI实验室对其中部分数据进行细粒度清洗、去重以及价值对齐，形成了书生·万卷1.0，具备多元融合、精细处理、价值对齐、易用高效等四大特征。
+
 <img width="585" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/151a8aeb-adaf-4ea4-b885-f16e34421053">
 
 ### 预训练
