@@ -9,6 +9,7 @@
 ## 视频笔记
 [视频](https://www.bilibili.com/video/BV1Vx421X72D/) 2024.5.18
 
+<img width="991" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/e96e2e1f-7ce5-4afc-a788-367bc17d7db8">
 
 
 ## InternLM2技术报告笔记
