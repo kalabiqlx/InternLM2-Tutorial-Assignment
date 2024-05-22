@@ -121,12 +121,12 @@
 <img width="558" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/30854890-9909-46ef-a4b9-2a3128be71b9">
 
 # 实战进阶运行Lagent智能体Demo
-见作业部分
+见homework部分
 
 <img width="362" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/feaf1bb6-3217-45e1-a4d3-45930a64fe4c">
 
 
 # 实战进阶灵笔InternLM-XCompser2
-见作业部分
+见homework部分
 
 <img width="341" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/58a316ac-dc73-4c92-836c-d43eb4264989">
