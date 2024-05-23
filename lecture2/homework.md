@@ -137,7 +137,7 @@
 * local-dir：本地存储路径。
 
 	import os
-	# 下载模型
+	#下载模型
 	os.system('huggingface-cli download --resume-download internlm/internlm2-chat-7b --local-dir your_path')
 
 使用 huggingface_hub 下载模型中的部分文件
@@ -147,7 +147,8 @@
 	
 	hf_hub_download(repo_id="internlm/internlm2-7b", filename="config.json")
 
- 
+ <img width="887" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/98324dfe-60cd-4cab-af45-eb7a365faf13">
+
 ### 相关知识
 
 ![image](https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/76bfe70b-6b32-4e51-b17c-526f7d39176e)
