@@ -124,7 +124,30 @@
 
 
 ## Lagent工具调用_数据分析_Demo部署
+安装依赖
 
+	pip install -U huggingface_hub
+ 
+<img width="854" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/1d83592b-8b68-4eff-a454-46495c553915">
+
+
+新建python文件，并写入如下代码
+
+* resume-download：断点续下
+* local-dir：本地存储路径。
+
+	import os
+	# 下载模型
+	os.system('huggingface-cli download --resume-download internlm/internlm2-chat-7b --local-dir your_path')
+
+使用 huggingface_hub 下载模型中的部分文件
+
+	import os 
+	from huggingface_hub import hf_hub_download  # Load model directly 
+	
+	hf_hub_download(repo_id="internlm/internlm2-7b", filename="config.json")
+
+ 
 ### 相关知识
 
 ![image](https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/76bfe70b-6b32-4e51-b17c-526f7d39176e)
