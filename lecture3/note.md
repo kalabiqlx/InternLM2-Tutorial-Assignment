@@ -3,8 +3,13 @@
 # contents
 - [RAG](#RAG)
    - [定义与基础概述](#定义与基础概述)
-   - [原理](#原理) 
-   
+   - [原理](#原理)
+   - [流程图](#流程图)
+   - [发展进程](#发展进程)
+   - [优化与微调](#优化与微调)
+   - [总结](#总结)
+- [茴香豆](#茴香豆）
+  
 # RAG  
 
 ## 定义与基础概述
@@ -45,25 +50,48 @@ RAG（Retrieval Augmented Generation）是一种结合了检索（Retrieval）�
 
 向量化是一个将文本数据转化为向量矩阵的过程，该过程会直接影响到后续检索的效果。目前常见的embedding模型如表中所示，这些embedding模型基本能满足大部分需求，但对于特殊场景（例如涉及一些罕见专有词或字等）或者想进一步优化效果，则可以选择开源Embedding模型微调或直接训练适合自己场景的Embedding模型。
 
-* 数据入库：
-数据向量化后构建索引，并写入数据库的过程可以概述为数据入库过程，适用于RAG场景的数据库包括：FAISS、Chromadb、ES、milvus等。一般可以根据业务场景、硬件、性能需求等多因素综合考虑，选择合适的数据库。
-<img width="986" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/421f1daf-b573-47f5-9471-13d8d16ceee2">
-
 **Embedding模型：**
 
 * [ChatGPT-Embedding](https://link.zhihu.com/?target=https%3A//platform.openai.com/docs/guides/embeddings/what-are-embeddings)
 * [ERNIE-Embedding V1](https://link.zhihu.com/?target=https%3A//cloud.baidu.com/doc/WENXINWORKSHOP/s/alj562vvu)
 * [M3E](https://link.zhihu.com/?target=https%3A//huggingface.co/moka-ai/m3e-base)
 * [BGE](https://link.zhihu.com/?target=https%3A//huggingface.co/BAAI/bge-base-en-v1.5)
+  
+* 数据入库：
+数据向量化后构建索引，并写入数据库的过程可以概述为数据入库过程，适用于RAG场景的数据库包括：FAISS、Chromadb、ES、milvus等。一般可以根据业务场景、硬件、性能需求等多因素综合考虑，选择合适的数据库。
+
+<img width="986" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/421f1daf-b573-47f5-9471-13d8d16ceee2">
 
 **应用阶段：** 在应用阶段，我们根据用户的提问，通过高效的检索方法，召回与提问最相关的知识，并融入Prompt；大模型参考当前提问和相关知识，生成相应的答案。关键环节包括：数据检索、注入Prompt等。
 
-* 数据检索:
+* 数据检索:相似性检索、全文检索等，根据检索效果，一般可以选择多种检索方式融合，提升召回率。
 	* 相似性检索：即计算查询向量与所有存储向量的相似性得分，返回得分高的记录。常见的相似性计算方法包括：余弦相似性、欧氏距离、曼哈顿距离等。
-    	* 全文检索：全文检索是一种比较经典的检索方式，在数据存入时，通过关键词构建倒排索引；在检索时，通过关键词进行全文检索，找到对应的记录。
+	* 全文检索：全文检索是一种比较经典的检索方式，在数据存入时，通过关键词构建倒排索引；在检索时，通过关键词进行全文检索，找到对应的记录。
  
 * 注入Prompt
   
 Prompt作为大模型的直接输入，是影响模型输出准确率的关键因素之一。在RAG场景中，Prompt一般包括任务描述、背景知识（检索得到）、任务指令（一般是用户提问）等，根据任务场景和大模型性能，也可以在Prompt中适当加入其他指令优化大模型的输出。Prompt的设计只有方法、没有语法，比较依赖于个人经验，在实际应用过程中，往往需要根据大模型的实际输出进行针对性的Prompt调优。
+
+## 流程图
+
+<img width="980" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/2f793f32-3a8a-4492-8cbc-2ec328f3fb53">
+
+## 发展进程
+
+<img width="964" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/1c7ca626-5b03-4091-9df7-e78b3f21bf15">
+
+## 优化与微调
+
+<img width="968" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/c484a2dd-e2dd-433c-b57c-196cb926c065">
+
+<img width="964" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/542f43f5-a88b-4617-ae53-0c0294f61ac3">
+
+## 总结
+
+<img width="890" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/45bdfde8-8f35-455f-9b04-11c753b159ed">
+
+# 茴香豆
+
+
 
 
