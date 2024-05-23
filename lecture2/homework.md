@@ -105,6 +105,23 @@
 <img width="671" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/74fe12d9-29b3-4bcf-807c-7bd0dbd44c4f">
 
 ### 视觉问答部署
+关闭并重新启动一个新的 terminal，继续输入指令，启动 InternLM-XComposer2-vl
+
+	conda activate demo
+	
+	cd /root/demo/InternLM-XComposer
+	python /root/demo/InternLM-XComposer/examples/gradio_demo_chat.py  \
+	--code_path /root/models/internlm-xcomposer2-vl-7b \
+	--private \
+	--num_gpus 1 \
+	--port 6006
+
+对本地端口环境配置本地 PowerShell，并替换端口号，输入密码，之后可以进行实践
+
+实践效果如下图所示：
+
+<img width="1100" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/189e6f8d-e656-4492-876a-51e1e49c3878">
+
 
 ## Lagent工具调用_数据分析_Demo部署
 
