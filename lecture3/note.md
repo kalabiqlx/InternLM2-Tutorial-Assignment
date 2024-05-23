@@ -1,4 +1,4 @@
-[视频地址](https://www.bilibili.com/video/BV1QA4m1F7t4/)|[官网地址](https://github.com/InternLM/Tutorial/blob/camp2/huixiangdou/readme.md)
+[视频地址](https://www.bilibili.com/video/BV1QA4m1F7t4/)|[官网地址](https://github.com/InternLM/Tutorial/blob/camp2/huixiangdou/readme.md)|[参考知乎文章](#https://zhuanlan.zhihu.com/p/668082024)
 
 # contents
 - [RAG](#RAG)
@@ -23,7 +23,28 @@ RAG（Retrieval Augmented Generation）是一种结合了检索（Retrieval）�
 
 ## 原理
 
+完整的RAG应用流程主要包含两个阶段：
+
+* 数据准备阶段：数据提取——>文本分割——>向量化（embedding）——>数据入库
+
+* 应用阶段：用户提问——>数据检索（召回）——>注入Prompt——>LLM生成答案
+
 <img width="994" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/b27ea74f-02d2-4deb-b0df-6572608b9779">
+
+** 数据准备阶段： ** 数据准备一般是一个离线的过程，主要是将私域数据向量化后构建索引并存入数据库的过程。主要包括：数据提取、文本分割、向量化、数据入库等环节。
+
+* 数据提取
+	* 数据加载：包括多格式数据加载、不同数据源获取等，根据数据自身情况，将数据处理为同一个范式。
+	* 数据处理：包括数据过滤、压缩、格式化等。
+	* 元数据获取：提取数据中关键信息，例如文件名、Title、时间等 。
+*文本分割：
+	* 文本分割主要考虑两个因素：1）embedding模型的Tokens限制情况；2）语义完整性对整体的检索效果的影响。一些常见的文本分割方式如下：
+	* 句分割：以”句”的粒度进行切分，保留一个句子的完整语义。常见切分符包括：句号、感叹号、问号、换行符等。
+	* 固定长度分割：根据embedding模型的token长度限制，将文本分割为固定长度（例如256/512个tokens），这种切分方式会损失很多语义信息，一般通过在头尾增加一定冗余量来缓解。
+* 向量化（embedding）：
+向量化是一个将文本数据转化为向量矩阵的过程，该过程会直接影响到后续检索的效果。目前常见的embedding模型如表中所示，这些embedding模型基本能满足大部分需求，但对于特殊场景（例如涉及一些罕见专有词或字等）或者想进一步优化效果，则可以选择开源Embedding模型微调或直接训练适合自己场景的Embedding模型。
+
+<img width="986" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/421f1daf-b573-47f5-9471-13d8d16ceee2">
 
 
 
