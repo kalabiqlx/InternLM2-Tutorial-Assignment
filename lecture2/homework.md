@@ -1,4 +1,4 @@
-# contents
+<img width="887" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/477a7214-b080-463f-ba2a-5ae75df89e0a"># contents
 - [基础作业](#基础作业)
    - [使用 InternLM2-Chat-1.8B 模型生成 300 字的小故事](#使用InternLM2-Chat-1.8B模型生成300字的小故事)
    - [使用书生·浦语Web和浦语对话](#使用书生·浦语Web和浦语对话)
@@ -133,12 +133,12 @@
 
 新建python文件，并写入如下代码
 
+		import os
+		# 下载模型
+		os.system('huggingface-cli download --resume-download internlm/internlm2-chat-7b --local-dir your_path')
+  
 * resume-download：断点续下
 * local-dir：本地存储路径。
-
-	import os
-	#下载模型
-	os.system('huggingface-cli download --resume-download internlm/internlm2-chat-7b --local-dir your_path')
 
 使用 huggingface_hub 下载模型中的部分文件
 
