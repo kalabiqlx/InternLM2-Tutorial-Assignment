@@ -31,7 +31,7 @@ RAG（Retrieval Augmented Generation）是一种结合了检索（Retrieval）�
 
 <img width="994" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/b27ea74f-02d2-4deb-b0df-6572608b9779">
 
-** 数据准备阶段： ** 数据准备一般是一个离线的过程，主要是将私域数据向量化后构建索引并存入数据库的过程。主要包括：数据提取、文本分割、向量化、数据入库等环节。
+**数据准备阶段：** 数据准备一般是一个离线的过程，主要是将私域数据向量化后构建索引并存入数据库的过程。主要包括：数据提取、文本分割、向量化、数据入库等环节。
 
 * 数据提取
 	* 数据加载：包括多格式数据加载、不同数据源获取等，根据数据自身情况，将数据处理为同一个范式。
@@ -47,13 +47,14 @@ RAG（Retrieval Augmented Generation）是一种结合了检索（Retrieval）�
 数据向量化后构建索引，并写入数据库的过程可以概述为数据入库过程，适用于RAG场景的数据库包括：FAISS、Chromadb、ES、milvus等。一般可以根据业务场景、硬件、性能需求等多因素综合考虑，选择合适的数据库。
 <img width="986" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/421f1daf-b573-47f5-9471-13d8d16ceee2">
 
-** Embedding模型： **
-[ChatGPT-Embedding](https://link.zhihu.com/?target=https%3A//platform.openai.com/docs/guides/embeddings/what-are-embeddings)
-[ERNIE-Embedding V1](https://link.zhihu.com/?target=https%3A//cloud.baidu.com/doc/WENXINWORKSHOP/s/alj562vvu)
-[M3E](https://link.zhihu.com/?target=https%3A//huggingface.co/moka-ai/m3e-base)
-[BGE](https://link.zhihu.com/?target=https%3A//huggingface.co/BAAI/bge-base-en-v1.5)
+**Embedding模型：**
 
-** 应用阶段： ** 在应用阶段，我们根据用户的提问，通过高效的检索方法，召回与提问最相关的知识，并融入Prompt；大模型参考当前提问和相关知识，生成相应的答案。关键环节包括：数据检索、注入Prompt等。
+* [ChatGPT-Embedding](https://link.zhihu.com/?target=https%3A//platform.openai.com/docs/guides/embeddings/what-are-embeddings)
+* [ERNIE-Embedding V1](https://link.zhihu.com/?target=https%3A//cloud.baidu.com/doc/WENXINWORKSHOP/s/alj562vvu)
+* [M3E](https://link.zhihu.com/?target=https%3A//huggingface.co/moka-ai/m3e-base)
+* [BGE](https://link.zhihu.com/?target=https%3A//huggingface.co/BAAI/bge-base-en-v1.5)
+
+**应用阶段：** 在应用阶段，我们根据用户的提问，通过高效的检索方法，召回与提问最相关的知识，并融入Prompt；大模型参考当前提问和相关知识，生成相应的答案。关键环节包括：数据检索、注入Prompt等。
 
 * 数据检索
 常见的数据检索方法包括：相似性检索、全文检索等，根据检索效果，一般可以选择多种检索方式融合，提升召回率。
