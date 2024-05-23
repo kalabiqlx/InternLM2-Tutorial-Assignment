@@ -46,11 +46,13 @@ RAG（Retrieval Augmented Generation）是一种结合了检索（Retrieval）�
 
 <img width="986" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/421f1daf-b573-47f5-9471-13d8d16ceee2">
 
-“`markdown
-| 列1    | 列2    | 列3   |
-|——|——|—–|
+“
+| 模型名称 | 描述 | 获取地址 |
+
+
 | 内容1  | 内容2  | 内容3 |
+
 | 内容4  | 内容5  | 内容6 |
-“`
+“
 
 
