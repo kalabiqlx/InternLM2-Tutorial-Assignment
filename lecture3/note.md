@@ -9,6 +9,8 @@
    - [优化与微调](#优化与微调)
    - [总结](#总结)
 - [茴香豆](#茴香豆)
+   - [介绍](#介绍)
+   - [工作流](#工作流)
   
 # RAG  
 
@@ -92,6 +94,25 @@ Prompt作为大模型的直接输入，是影响模型输出准确率的关键�
 
 # 茴香豆
 
+## 介绍
+
+[茴香豆](https://github.com/InternLM/HuixiangDou)是一个基于LLMs的领域知识助手，由书生浦语团队开发的开源大模型应用。
+
+* 专为即时通讯（IM）工具中的群聊场景优化的工作流，提供及时准确的技术支持和 自动化问答服务。 
+* 通过应用检索增强生成（RAG）技术，茴香豆能够理解和搞笑准确的回应与特定知识 领域相关的复杂查询。
+
+<img width="986" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/00ecb757-7bc1-42d7-811d-b27d387cf555">
+
+茴香豆知识助手由四个部分组成，包括知识库（个人专业领域的文档），前端（与用户交流的软件）， LLM后端（调用大模型）以及茴香豆本身。
+
+<img width="986" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/9bcdc961-e578-4275-aec1-25f88e1994c7">
+
+## 工作流
+整个工作流分为三个部分，预处理，拒答工作流以及应答工作流，预处理的部分会将用户的输入筛选并转换为合适的query，query进入拒答工作流后会通过与数据库中相关问题的比较来得到得分，以此来判断是否要进入回答环节。
+
+<img width="992" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/1dbd6470-4c83-492c-a2dc-a6df10363027">
+
+<img width="974" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/b2589cab-2bf6-4cf1-a8b1-938222cdd864">
 
 
 
