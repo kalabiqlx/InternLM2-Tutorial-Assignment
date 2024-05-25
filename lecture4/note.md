@@ -4,13 +4,13 @@
 - [微调](#微调)
    - [定义](#定义)
    - [微调方法](#微调方法)
+   - [数据处理](#数据处理)
       - [增量预训练和指令跟随](#增量预训练和指令跟随)
       - [全量微调FFT](#全量微调FFT)
       - [PEFT](#PEFT)
 - [XTuner](#XTuner)
 - [8GB显存玩转LLM](#8GB显存玩转LLM)
 - [InternLM2_1.8B_模型](#InternLM2_1.8B_模型)
-- [InternLM2_1.8B_模型(#InternLM2_1.8B_模型)
 - [多模态LLM微调](#多模态LLM微调)
 
 
@@ -98,7 +98,23 @@ LoRA是跟Prompt Tuning和Prefix Tuning完全不相同的另一条技术路线�
 
 [论文：QLoRA: Efficient Finetuning of Quantized LLMs](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2305.14314.pdf)
 
+<img width="937" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/b3d5efc5-414f-4124-bf2c-98c90f24cac8">
+
+<img width="992" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/5047405b-b53b-4305-868c-6d0554a17367">
+
 [其他微调方法：Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2303.15647.pdf)
+
+### 数据处理
+
+<img width="971" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/1400f7c9-773a-4f79-91c6-9d44e88b2747">
+
+<img width="975" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/68c4644c-1a39-4928-bb7d-d493485a98ad">
+
+<img width="924" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/c8859184-93f6-446e-9cf0-c4aaa3e9eb97">
+
+<img width="938" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/92246ffc-de78-4159-99ad-25450c49105c">
+
+<img width="961" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/39eb19d5-e23c-49ee-a875-b91e767e921a">
 
 ## XTuner
 
