@@ -118,10 +118,39 @@ LoRA是跟Prompt Tuning和Prefix Tuning完全不相同的另一条技术路线�
 
 ## XTuner
 
+<img width="920" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/27321bd3-8022-4065-98c4-e25e65d337ff">
+
 ## 8GB显存玩转LLM
+
+**flash attention：**
+
+FlashAttention是一种新的注意力机制，它通过以下两种方式解决了传统注意力机制的问题：
+
+* 降低计算复杂度：FlashAttention通过使用哈希技术，将计算复杂度从O(n^2)降低到了O(n)。这使得FlashAttention能够处理大规模的数据。
+* 捕捉长距离依赖：FlashAttention通过使用动态规划，能够有效地捕捉数据中的长距离依赖。
+
+[论文：FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness](https://arxiv.org/abs/2205.14135)
+
+<img width="941" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/c2f133a1-b2d4-4d6b-a03d-3fbd261c139f">
+
+<img width="931" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/01bb89cd-d114-4639-9ac8-cd1e65d7e26b">
 
 ## InternLM2_1.8B_模型
 
+<img width="905" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/572664a7-d335-4e14-9267-b8225b9e1f60">
+
 ## 多模态LLM微调
+
+<img width="923" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/5d174004-11af-42c6-bd08-c71dbc421384">
+
+<img width="906" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/f54e81f6-40ec-4b4f-b90f-8d238d7adc91">
+
+Image Projector 的训练和测试，有点类似之前我们讲过的 LoRA 微调方案。
+
+二者都是在已有LLM的基础上，用新的数据训练一个新的小文件。
+
+<img width="841" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/d79be6bb-dfd8-405e-af49-508e0bfd8ee5">
+
+<img width="934" alt="image" src="https://github.com/kalabiqlx/InternLM2-Tutorial-Assignment/assets/102224466/e8acf02a-2404-40a1-a3e9-cba5555c1971">
 
 ## Agent
